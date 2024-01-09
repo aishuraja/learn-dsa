@@ -17,8 +17,7 @@ Expected output: False
 def check_same_sum(arr1, arr2):
     a=0
     b=0
-    for i,j in range(len(arr1), len(arr2)):
-        print(i,j)
+    for i in range(len(arr1)):
         a=a+arr1[i]
         print("this is a:", a)
         
