@@ -20,6 +20,7 @@ class HashTable:
         index = self.hash_function(key)
         if self.table[index] is None:
             self.table[index] = []
+            
         else:
             self.table[index].append((key, value))
 
@@ -30,7 +31,7 @@ class HashTable:
             for k , v in self.table[index]:
                 if k == key:
                     return v
-        return None
+            return None
     
     # define fucntion to access the value by its index in the table 
     def get_by_index(self, key):
@@ -56,6 +57,7 @@ print("Profession of", hash_table.get("Name"), ":",hash_table.get("profession"))
 
 
     # 
+
 
 
         
