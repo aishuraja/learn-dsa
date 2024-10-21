@@ -12,16 +12,16 @@ class Solution:
             #     s[i].pop()
             if s[i] == '(' :
                 countOpeningPara += 1
-                result.append(i)
+                result.append(s[i])
             elif s[i] == ')': 
                 if countOpeningPara > 0:
                      # its valid if matching opening paraenthesis are found 
                     countOpeningPara -= 1 
-                    result.append(i)
+                    result.append(s[i])
 
 
             else:
-                result.append(i)
+                result.append(s[i])
 
         
 
