@@ -11,7 +11,7 @@ class HashTable:
         self.table = [None] * capacity
 
     
-    # define hash function to map keys to indexes
+    # define hash function to map keys to indexes    ---  hash the key with the capacity to find the index 
     def hash_function(self, key):
         return hash(key)% self.capacity  # hash(key) gives the hash value 
     
@@ -20,7 +20,7 @@ class HashTable:
         index = self.hash_function(key)
         if self.table[index] is None:
             self.table[index] = []
-            
+             
         else:
             self.table[index].append((key, value))
 
