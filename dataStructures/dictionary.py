@@ -4,7 +4,7 @@
             # .update ()
             # .pop("key") / popitem() - pops the latest updated pair 
             # .clear() - clears the dictionary 
-            # .keys() - gives the keys  /   .values() - gives the values 
+            # .keys() - gives all keys existing /   .values() - gives all values existing
 
 dict_captials = {"India":"New Delhi",
                  "USA": "Washington D.C",
@@ -12,7 +12,10 @@ dict_captials = {"India":"New Delhi",
 
 # print(dict_captials)
 
+# get the values of keys 
+
 print(dict_captials.get("India"))
+
 for i in dict_captials:
     print(dict_captials[i])
 
