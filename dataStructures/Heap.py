@@ -69,4 +69,4 @@ heap = []
 for k, v in counter.items():
     heapq.heappush(heap, (v,k))   # here it takes value 1st (frequency of key) then key (v,k) , if encounters tie with same values then compares with key (k, v)
 
-print(heap) # smallest (min) frequency shows on the top. 
+print(heap) # smallest (min) frequency shows on the top
