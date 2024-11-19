@@ -31,4 +31,20 @@ print(arr)
 
 # matrix 
 
-m = matrix ('1 2 3 ; 4  5 6 ; 7 8 9 ')
+m = matrix ('1 2 3 ; 4  5 6 ; 7 8 9 ') # -> prints [1,2,3]
+                                                    #[4, 5, 6]
+print(diagonal(m)) # -> prints 
+
+
+# 2d matrix or list or tuple
+# creating a number pad 
+num_pad = ((1,2,3),
+           (4,5,6),
+           (7,8,9),
+           ("*",0,"#"))
+
+for row in num_pad:
+    for num in row:
+        print(num, end = " ")
+    print()
+    
